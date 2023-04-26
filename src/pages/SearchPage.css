@@ -1,0 +1,56 @@
+.Search-page {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 25px;
+    flex-direction: column;
+  }
+  body {
+    margin: 0%;
+    padding: 0%;
+  }
+  .TitleSection {
+    background: #0d1840;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: yellow;
+  }
+  
+  .TitleSection input {
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid #0e398d;
+    font-size: 18px;
+    padding-left: 10px;
+  }
+  
+  .TitleSection button {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    border-radius: 50px;
+    font-size: 18px;
+    padding-left: 10px;
+    border: none;
+    color: Yellow;
+    background: #0e398d;
+  }
+  .TitleSection button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background: red;
+    transition: 200ms;
+  }
+  /* .DisplaySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/pokiecardback.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 400px;
+  } */

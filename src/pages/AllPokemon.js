@@ -1,7 +1,14 @@
 import React from 'react'
+import { useState } from 'react'
+import PokemonList from '../components/PokemonList'
 
-export default function  AllPokemon() {
+
+export default function  AllPokemon({pokemon}) {
+ 
+  
   return (
-    <div> All Pokemon Page</div>
+    <div> 
+    <PokemonList />
+      </div>
   )
 }

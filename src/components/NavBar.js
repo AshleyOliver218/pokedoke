@@ -10,6 +10,9 @@ export default function NavBar() {
         <Link to='/pokemon'>
             <div>Pokemon</div>
         </Link>
+        <Link to='searchpage'>
+          <div>Search</div>
+        </Link>
     </div>
   )
 }
