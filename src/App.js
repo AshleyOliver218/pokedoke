@@ -5,9 +5,9 @@ import Home from './pages/Home'
 import AllPokemon from './pages/AllPokemon'
 import {useState, useEffect} from 'react'
 import PokemonList from './components/PokemonList'
-import GetAllPokemon from './services/GetAllPokemon';
 import SinglePokemon from './pages/SinglePokemon';
 import SearchPage from './pages/SearchPage';
+import {pokemonArray, featuredPokemon} from './data'
 
 function App() {
  

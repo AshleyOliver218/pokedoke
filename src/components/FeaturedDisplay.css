@@ -1,0 +1,251 @@
+/* @import url('https://fonts.cdnfonts.com/css/pokemon-solid'); */
+
+.Featured-Display{
+    display: grid;
+    grid-template-columns: 1fr,1fr,1fr,1fr;
+    grid-template-rows: 1fr,1fr,1fr,1fr,;
+    grid-template-areas: 
+    "randPokeName randPokeName randPokeName randPokeName"
+    ".feat-img feat-img."
+    ".type-display type-display."
+    "rand-fact rand-fact rand-fact rand-fact";
+    flex-direction: column;
+    background-image: url('../images/pokiecardfrontsmall.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 500px;
+    background-color: yellow;
+    font-family: 'Pokemon Solid';
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    contain: content;
+   text-shadow:0 0 2px blue  ;
+
+}
+.Featured-img{
+grid-area: feat-img;
+}
+.random-fact{
+    grid-area: rand-fact;
+}
+.type-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60vh;
+    width: 30vw;
+    justify-self: center;
+    grid-area: type-display;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+.none{
+    display:none;
+}
+.randomPokemon-name{
+    grid-area: randPokeName;
+}
+.Electric{
+    background-color: #F7D02C;
+    /* border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;; */
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;
+}
+.Dragon{
+    background-color: #6F35FC;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Ice{
+    background-color: #96D9D6;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Fire{
+    background-color:#EE8130;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Normal{
+    background-color:#A8A77A ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Grass{
+    background-color:#7AC74C ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Fighting{
+    background-color:#C22E28 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Water{
+    background-color:#6390F0 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Poison{
+    background-color:#A33EA1 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Ground{
+    background-color:#E2BF65 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Flying{
+    background-color:#A98FF3 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Psychic{
+    background-color:#F95587 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Bug{
+    background-color:#A6B91A ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Rock{
+    background-color:#B6A136 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Ghost{
+    background-color:#735797 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Dark{
+    background-color:#705746 ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Steel{
+    background-color:#B7B7CE ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
+.Fairy{
+    background-color:#D685AD ;
+    border-end-end-radius: 50%;
+    border-end-start-radius: 50%;
+    border-start-end-radius: 50%;
+    border-start-start-radius: 50%;;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid white;
+}
