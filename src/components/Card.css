@@ -1,3 +1,23 @@
-.Card{
-background-image: url('../images/pokiecardbacksmall.gif');
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+.pokeCard{
+background-color: #FFFFFF;
+display:grid;
+grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr,;
+grid-template-rows: 1fr, 1fr, 1fr, 1fr,;
+width:500px;
+height: 500Px;
+border-radius: 2%;
+justify-self: center;
+text-align: center;
+}
+.slink{
+    justify-content: space-between;
+    background-image: url('../images/pokiecardbacksmall.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    font-size: xx-large;
+    font-family: 'Pokemon Solid';
+    
 }

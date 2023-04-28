@@ -1,13 +1,22 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 import './Card.css' 
-export default function Card(props) {
-    // const pokeName=props
+import { useState } from 'react'
+
+export default function Card({pokemon}) {
+  const {name, url, id} = {
+    name: pokemon.name,
+    url: `https://pokeapi.co/api/v2/pokemon/${pokemon.id}/`,
+    id: ""
+  }
+  
+// console.log(pokemon)
+  
+    // console.log(pokemon)
   return (
-    <div className="Card">
-        {/* {pokeName} */}
-        {/* <Link to= {`/pokemon/${pokemon.name}`}>{pokemon.name}</Link>
-        <Link to= {`/pokemon/${pokemon.name}`}>{pokemon.name}</Link> */}
+    <div className="pokeCard">
+        
+       <Link className='slink' to= {`/pokemon/${name}`}>{name}</Link>
         
     </div>
   )

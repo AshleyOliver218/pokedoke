@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    flex-direction: row;
+    font-size:3rem ;
+    background-image:linear-gradient(to right,#0075BE, #0C3348);
+    padding: 50px;
+    font-family: 'Pokemon solid';
+  
+}
+.pokedoke{
+    text-shadow:10px 10px  #0A285F,  0 0 10px #FFFFFF;
+    color: #FFCC00;
+}
+a:link {
+ color: yellow;
+ text-shadow: 3px 3px #FFCC00;
+}
+a:visited {
+  color:yellow;
+}
+a:hover{
+background-color: #0A285F;
+padding: 20px;
+border-radius: 20%;
+transition: 200ms;
+}

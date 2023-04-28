@@ -1,11 +1,11 @@
 import React from 'react'
-import featuredPokemon from '../data'
+import featuredPokemon from '../services/data'
 import './FeaturedDisplay.css'
 
 export default function FeaturedDisplay() {
    
    let randomPokemon = featuredPokemon()
-   let featuredRandomURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${randomPokemon.id}.png`
+   let featuredRandomURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${randomPokemon.id}.png`
    
    let randomTypes = [randomPokemon.type.map((type, i) => {
                       return <div className={type} key={i}>{type}</div>

@@ -7,7 +7,7 @@ import {useState, useEffect} from 'react'
 import PokemonList from './components/PokemonList'
 import SinglePokemon from './pages/SinglePokemon';
 import SearchPage from './pages/SearchPage';
-import {pokemonArray, featuredPokemon} from './data'
+import {pokemonArray, featuredPokemon} from './services/data'
 
 function App() {
  

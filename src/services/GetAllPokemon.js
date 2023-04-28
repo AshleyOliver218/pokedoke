@@ -3,9 +3,9 @@ import axios from 'axios'
 
 
 
-  const GetAllPokemon = async() => {
+  const GetAllPokemon = async(Url) => {
     try {
-     const response = await axios.get('https://pokeapi.co/api/v2/pokemon/')
+     const response = await axios.get(Url)
      return response.data
     }catch(e){
        console.error(e)
@@ -14,3 +14,4 @@ import axios from 'axios'
 
  export default GetAllPokemon
 
+// https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20
