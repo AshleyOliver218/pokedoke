@@ -26,14 +26,14 @@ export default function SearchPage() {
           hp: response.data.stats[0].base_stat,
           attack: response.data.stats[1].base_stat,
           defense: response.data.stats[2].base_stat,
-          type: response.data.types[0].type.name,
+          types: response.data.types,
           id: response.data.id,
-          forms: response.data.forms,
-          abilities: response.data.abilities 
+          abilities: response.data.abilities,
+          moves: response.data.moves
         })
         setPokemonFound(true)
       }
-    ).catch(err =>{
+    ).catch(err => {
       console.log('nothing found')
       setPokemonFound(false)
 
@@ -41,9 +41,10 @@ export default function SearchPage() {
   };
 
 
-  let backimgURL=`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${pokemon.id}.png`
-  let frontShinyimgURL =`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${pokemon.id}.png`
+  let backimgURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${pokemon.id}.png`
+  let frontShinyimgURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${pokemon.id}.png`
   let backShinyimgURL = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/shiny/${pokemon.id}.png`
+  let capital = pokeName.toUpperCase()
   return (
     <div className="Search-page">
       <div className="TitleSection">
@@ -61,14 +62,40 @@ export default function SearchPage() {
           <h2>Search using a valid pokemon name</h2>
         ) : (
           <>
-          <h1>{pokemon.name}</h1>
-          <img alt='pokemon front' src={pokemon.img}/><img alt='pokemon back' src={backimgURL} /><img alt='shiny front' src={frontShinyimgURL}/><img alt='shiny back' src={backShinyimgURL}/>
-          <h3>Species: {pokemon.species}</h3>
-          <h3>Type: {pokemon.type}</h3>
-          {/* <ul>Abilities: {pokemon.abilities.map((ability, i) => {
-              return ( 
-                <li></li>)
-          })}</ul> */}
+
+            <div className="image-display">
+              <img alt='pokemon front' src={pokemon.img} />
+              <img alt='pokemon back' src={backimgURL} />
+              <img alt='shiny front' src={frontShinyimgURL} />
+              <img alt='shiny back' src={backShinyimgURL} />
+            </div>
+            <div className="info-display">
+              <h1>{capital} I choose you!</h1>
+              <h3>Species: {pokemon.species}</h3>
+              <h3>Type: {[pokemon.types.map((types,i)=>{
+                return(<div className={types.type.name}>{types.type.name}</div>)
+              })]}</h3>
+              <h4>Hp: {pokemon.hp}</h4>
+              <h4>Attack: {pokemon.attack}</h4>
+              <h4>Defense: {pokemon.defense}</h4>
+              <div className="AList-container">
+                <ul>Abilities unique to {pokeName}: {[pokemon.abilities.map((ability, i) => {
+                  return (
+                    <li key={i}>{pokemon.abilities[i].ability.name}</li>
+                  )
+                })]}
+                </ul>
+              </div>
+              <div className="AList-Container">
+                <ul>{pokeName}'s Potential Abilities: {[pokemon.moves.map((ability, i) => {
+                  return (
+                    <li key={i}>{pokemon.moves[i].move.name}</li>
+                  )
+                })]}
+
+                </ul>
+              </div>
+            </div>
           </>
         )}
       </div>
