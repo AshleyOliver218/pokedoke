@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+
 import './Card.css' 
-import { useState } from 'react'
 
 export default function Card({pokemon}) {
   const {name, url, id} = {
@@ -10,9 +10,7 @@ export default function Card({pokemon}) {
     id: ""
   }
   
-// console.log(pokemon)
-  
-    // console.log(pokemon)
+
   return (
     <div className="pokeCard">
         

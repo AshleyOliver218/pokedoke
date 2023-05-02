@@ -1,10 +1,10 @@
-import GetAllPokemon from '../services/GetAllPokemon'
+import GetAllPokemon from '../../services/GetAllPokemon'
 import { useState, useEffect } from 'react'
 import './PokemonList.css'
-import Card from './Card'
-import Pagination from '../services/Pagination'
+import Card from '../Card/Card'
+import Pagination from '../../services/Pagination/Pagination'
 import axios from 'axios'
-//import {Link} from 'react-router-dom'
+
 
 export default function PokemonList() {
   const [pokemon, setPokemon] = useState(null)
@@ -16,7 +16,7 @@ export default function PokemonList() {
     setLoading(true)
     let cancel
     GetAllPokemon(currentUrl, {
-      cancelToken: new axios.CancelToken(c => cancel = c )
+      cancelToken: new axios.CancelToken(c => cancel = c)
     }).then(response => {
       setLoading(false)
       setNextUrl(response.next)
@@ -28,25 +28,26 @@ export default function PokemonList() {
       cancel()
     }
   }, [currentUrl])
-  
-  function goToNextPage(){
+
+  function goToNextPage() {
     setCurrentUrl(nextUrl)
   }
-  function goToPrevPage(){
+  function goToPrevPage() {
     setCurrentUrl(previousUrl)
   }
- 
-  
-if(loading) return "loading..."
+
+
+  if (loading) return "loading..."
   return (
     <div className='Pokemon-List'>
       <div className='list-container'>
-      {pokemon ? pokemon.map((ele, i) => (
-        <Card key={i} pokemon={ele}/>)) : <div>Not Found</div>}
-      </div> 
+        <h1 className='cyp'>Choose Your Pokemon...</h1>
+        {pokemon ? pokemon.map((ele, i) => (
+          <Card key={i} pokemon={ele} />)) : <div>Not Found</div>}
+      </div>
       <Pagination
-      goToNextPage={nextUrl ? goToNextPage : null}
-      goToPrevPage={previousUrl ? goToPrevPage: null}/>
+        goToNextPage={nextUrl ? goToNextPage : null}
+        goToPrevPage={previousUrl ? goToPrevPage : null} />
     </div>
   )
 }

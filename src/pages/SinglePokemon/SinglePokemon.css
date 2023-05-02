@@ -1,0 +1,30 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-solid');
+
+.PokeInfo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    margin: 40px;
+    border-radius: 3%;
+    flex-direction: row;
+    background-color: #EFFCD5;
+    background-image: url('/src/images/pokiecardfrontsmall.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    color: #0C3348;
+}
+
+.caps-name {
+    font-family: 'Pokemon Solid';
+    color: #FB1B1B;
+    text-shadow: 4px 4px #0A285F;
+}
+
+.PokeInfo-container img {
+    width: 250px;
+    height: 250px;
+    margin: -10px;
+    padding: 0;
+}
