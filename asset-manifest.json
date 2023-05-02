@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/pokedoke/static/css/main.d3b82254.css",
+    "main.js": "/pokedoke/static/js/main.cbee94c2.js",
+    "static/media/pokiecardbacksmall.gif": "/pokedoke/static/media/pokiecardbacksmall.c7a67a0995c32a6d8fea.gif",
+    "static/media/pokiecardfrontsmall.png": "/pokedoke/static/media/pokiecardfrontsmall.07c298a21ebd2ddc038a.png",
+    "static/media/pokeballredu.png": "/pokedoke/static/media/pokeballredu.2f240a22f5c71ac4c8e1.png",
+    "index.html": "/pokedoke/index.html",
+    "main.d3b82254.css.map": "/pokedoke/static/css/main.d3b82254.css.map",
+    "main.cbee94c2.js.map": "/pokedoke/static/js/main.cbee94c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3b82254.css",
+    "static/js/main.cbee94c2.js"
+  ]
+}
