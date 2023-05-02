@@ -12,7 +12,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Routes>
-        <Route path='/' element={<Home />} />
+        <Route path='' element={<Home />} />
         <Route path='/pokemon' element={<AllPokemon />} />
         <Route path='/pokemon/:name' element={<SinglePokemon />} />
         <Route path='/searchpage' element={<SearchPage />} />

@@ -44,10 +44,9 @@
       }
     ).catch(err => {
       console.log('nothing found')
-      setPokemonFound(false)
-
-    })
+      setPokemonFound(false)})
   };`
+  
 This code calls the PokemonApi and assigns key values to each pokemon searched.
 
 # API Used
