@@ -41,7 +41,7 @@ export default function PokeInfo() {
         <div>
           <div className='pic-container'>
             <h1 className='caps-name'>{allCapsName}</h1>
-            <img src={pokemon.img} />
+            <img alt={pokeName.name} src={pokemon.img} />
           </div>
           <h3>Hp:{pokemon.hp}</h3>
           <h3>Attack:{pokemon.attack}</h3>
