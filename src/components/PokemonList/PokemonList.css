@@ -7,7 +7,6 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     width: 90vw;
 }
 
@@ -34,3 +33,4 @@
     color: #FB1B1B;
     text-shadow: 4px 4px #0A285F;
 }
+
